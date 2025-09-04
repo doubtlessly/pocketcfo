@@ -236,7 +236,7 @@ export function ScenarioInputs({ scenario, onUpdateScenario }: ScenarioInputsPro
                   </Label>
                   <div className="mt-1 p-3 bg-white border rounded-md">
                     <span className="text-lg font-semibold text-myobPurple">
-                      {scenario.parameters.pricingChange > 0 ? '+' : ''}
+                      {(scenario.parameters.pricingChange || 0) > 0 ? '+' : ''}
                       {scenario.parameters.pricingChange || 0}%
                     </span>
                   </div>

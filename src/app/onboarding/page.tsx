@@ -674,12 +674,14 @@ function AgentSelectionStep({
   ];
 
   // Auto-select recommended agents on first load
+  const hasInitialized = React.useRef(false);
   React.useEffect(() => {
-    if (selectedAgents.length === 0) {
+    if (!hasInitialized.current && selectedAgents.length === 0) {
+      hasInitialized.current = true;
       const recommendedIds = agents.filter(agent => agent.recommended).map(agent => agent.id);
       recommendedIds.forEach(id => onAgentToggle(id));
     }
-  }, []);
+  }, [selectedAgents.length, onAgentToggle]);
 
   return (
     <div className="space-y-8">
