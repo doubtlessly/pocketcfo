@@ -150,7 +150,7 @@ export function AICFOAlerts({
             <Brain className="h-8 w-8 text-white" />
           </div>
           <h3 className="text-lg font-semibold text-gray-900 mb-2">All Clear!</h3>
-          <p className="text-gray-600">Your AI CFO hasn't detected any urgent issues requiring attention.</p>
+          <p className="text-gray-600">Your AI CFO hasn&apos;t detected any urgent issues requiring attention.</p>
         </CardContent>
       </Card>
     );

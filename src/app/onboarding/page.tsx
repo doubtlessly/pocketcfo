@@ -239,7 +239,7 @@ function WelcomeStep({ onNext }: { onNext: () => void }) {
           onClick={onNext}
           className="btn-modern btn-primary-modern px-8 py-3 text-lg"
         >
-          Let's Get Started
+          Let&apos;s Get Started
           <ChevronRight className="h-5 w-5 ml-2" />
         </Button>
       </CardContent>

@@ -223,7 +223,7 @@ export default function RevenuePage() {
                       borderRadius: '12px',
                       boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)'
                     }}
-                    formatter={(value: any) => [formatCurrency(value), '']}
+                    formatter={(value: number | string) => [formatCurrency(Number(value)), '']}
                   />
                   <Area 
                     type="monotone" 

@@ -283,7 +283,7 @@ export default function ValuePropPage() {
               Trusted by Tourism Founders Across NZ
             </h2>
             <p className="text-xl text-gray-600">
-              Join hundreds of tourism operators who've gained financial clarity
+              Join hundreds of tourism operators who&apos;ve gained financial clarity
             </p>
           </div>
 

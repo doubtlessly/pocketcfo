@@ -64,7 +64,7 @@ export interface ChatMessage {
   content: string;
   timestamp: string;
   kpiDeltas?: { name: string; from: number; to: number }[];
-  chartData?: any;
+  chartData?: Record<string, unknown>;
   actions?: string[];
 }
 

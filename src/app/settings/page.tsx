@@ -71,7 +71,7 @@ export default function SettingsPage() {
     }));
   };
 
-  const updatePreference = (key: string, value: any) => {
+  const updatePreference = (key: string, value: string | boolean | number) => {
     setPreferences(prev => ({ ...prev, [key]: value }));
   };
 

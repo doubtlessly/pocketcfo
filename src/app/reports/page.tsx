@@ -316,7 +316,7 @@ export default function ReportsPage() {
                     <div>
                       <h4 className="font-medium text-blue-900">AI Content Assistant</h4>
                       <p className="text-sm text-blue-800 mt-1">
-                        Click "Auto-Generate" to populate sections with AI-generated content based on your actual financial data and recent performance.
+                        Click &quot;Auto-Generate&quot; to populate sections with AI-generated content based on your actual financial data and recent performance.
                       </p>
                     </div>
                   </div>

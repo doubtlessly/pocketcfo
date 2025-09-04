@@ -275,7 +275,7 @@ export default function ProfitabilityPage() {
                         borderRadius: '12px',
                         boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)'
                       }}
-                      formatter={(value: any) => [`${value}%`, '']}
+                      formatter={(value: number | string) => [`${value}%`, '']}
                     />
                     <Line type="monotone" dataKey="gross" stroke="#10b981" strokeWidth={3} name="Gross Margin" />
                     <Line type="monotone" dataKey="operating" stroke="#3b82f6" strokeWidth={3} name="Operating Margin" />
@@ -359,7 +359,7 @@ export default function ProfitabilityPage() {
                         <Cell key={`cell-${index}`} fill={entry.color} />
                       ))}
                     </Pie>
-                    <Tooltip formatter={(value: any) => [formatCurrency(value), '']} />
+                    <Tooltip formatter={(value: number | string) => [formatCurrency(Number(value)), '']} />
                   </RechartsPieChart>
                 </ResponsiveContainer>
               </CardContent>

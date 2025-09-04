@@ -108,7 +108,7 @@ export default function Dashboard() {
       return;
     }
 
-    const SpeechRecognition = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
+    const SpeechRecognition = (window as typeof globalThis & { SpeechRecognition?: any; webkitSpeechRecognition?: any }).SpeechRecognition || (window as typeof globalThis & { SpeechRecognition?: any; webkitSpeechRecognition?: any }).webkitSpeechRecognition;
     const recognition = new SpeechRecognition();
     
     recognition.continuous = false;
