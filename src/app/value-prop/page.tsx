@@ -179,7 +179,7 @@ export default function ValuePropPage() {
               The Reality of Running a Tourism Startup in NZ
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              You're juggling seasonal cash flow, GST complexity, international customers, 
+              You&apos;re juggling seasonal cash flow, GST complexity, international customers, 
               and investor expectations — all while trying to grow your business.
             </p>
           </div>
@@ -291,7 +291,7 @@ export default function ValuePropPage() {
             {social_proof.map((testimonial, index) => (
               <Card key={index} className="border-myobPurple/20">
                 <CardContent className="p-6">
-                  <p className="text-gray-700 mb-6 italic">"{testimonial.quote}"</p>
+                  <p className="text-gray-700 mb-6 italic">{testimonial.quote}</p>
                   <div className="flex items-center space-x-3">
                     <div className="w-12 h-12 bg-myobLavender rounded-full flex items-center justify-center">
                       <Users className="h-6 w-6 text-myobPurple" />
@@ -319,7 +319,7 @@ export default function ValuePropPage() {
               Ready to Take Control of Your Financial Future?
             </h2>
             <p className="text-xl text-purple-100 mb-8">
-              Join the hundreds of NZ tourism founders who've already transformed 
+              Join the hundreds of NZ tourism founders who&apos;ve already transformed 
               their financial decision-making with MYOB Pocket CFO.
             </p>
             

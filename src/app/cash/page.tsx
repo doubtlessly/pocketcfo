@@ -243,7 +243,7 @@ export default function CashCollectionsPage() {
                       key={filter}
                       variant={activeFilter === filter ? 'default' : 'outline'}
                       size="sm"
-                      onClick={() => setActiveFilter(filter as any)}
+                      onClick={() => setActiveFilter(filter as 'all' | 'high' | 'medium' | 'low')}
                       className={activeFilter === filter ? 'bg-myobPurple hover:opacity-90' : ''}
                     >
                       {filter.charAt(0).toUpperCase() + filter.slice(1)}
@@ -290,7 +290,7 @@ export default function CashCollectionsPage() {
                         {item.contactScript && (
                           <div className="p-3 bg-blue-50 rounded-lg">
                             <p className="text-sm font-medium text-blue-700">Contact Script:</p>
-                            <p className="text-sm text-blue-600 mt-1">"{item.contactScript}"</p>
+                            <p className="text-sm text-blue-600 mt-1">{item.contactScript}</p>
                           </div>
                         )}
                       </div>

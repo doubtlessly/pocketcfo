@@ -283,7 +283,7 @@ export default function AskPage() {
                           onClick={() => handleSuggestionClick(question)}
                           className="w-full text-left p-3 rounded-xl bg-gray-50 hover:bg-purple-50 hover:text-purple-700 transition-all duration-200 text-sm border border-transparent hover:border-purple-200 group-hover:bg-purple-50"
                         >
-                          "{question}"
+                          {question}
                         </button>
                       ))}
                     </div>
@@ -387,7 +387,7 @@ export default function AskPage() {
                             Welcome to your AI CFO
                           </h3>
                           <p className="text-gray-600 mb-8">
-                            Ask me anything about your finances, from cash flow analysis to strategic planning. I'm connected to your business data for accurate insights.
+                            Ask me anything about your finances, from cash flow analysis to strategic planning. I&apos;m connected to your business data for accurate insights.
                           </p>
                           
                           <div className="space-y-4">

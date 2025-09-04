@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Link from 'next/link';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -265,7 +266,7 @@ function BusinessBasicsStep({
         <div className="space-y-6">
           <div>
             <Label htmlFor="businessName" className="text-base font-semibold text-gray-900">
-              What's your business name?
+              What&apos;s your business name?
             </Label>
             <Input
               id="businessName"
@@ -871,10 +872,10 @@ function CompletionStep({
             className="btn-modern btn-primary-modern w-full py-3"
             asChild
           >
-            <a href="/">
+            <Link href="/">
               Meet Your AI CFO Team
               <ChevronRight className="h-5 w-5 ml-2" />
-            </a>
+            </Link>
           </Button>
           
           <Button 
@@ -882,9 +883,9 @@ function CompletionStep({
             className="btn-modern btn-secondary-modern w-full"
             asChild
           >
-            <a href="/agents">
+            <Link href="/agents">
               View All Agents
-            </a>
+            </Link>
           </Button>
         </div>
       </CardContent>
