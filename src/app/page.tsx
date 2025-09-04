@@ -108,7 +108,7 @@ export default function Dashboard() {
       return;
     }
 
-    // @ts-ignore - Speech Recognition API types
+    // @ts-expect-error - Speech Recognition API types
     const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
     const recognition = new SpeechRecognition();
     
@@ -122,7 +122,7 @@ export default function Dashboard() {
       setIsListening(true);
     };
 
-    // @ts-ignore - SpeechRecognitionEvent type
+    // @ts-expect-error - SpeechRecognitionEvent type
     recognition.onresult = (event) => {
       const transcript = event.results[0][0].transcript;
       setSearchQuery(transcript);
