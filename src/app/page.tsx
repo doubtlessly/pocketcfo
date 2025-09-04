@@ -108,7 +108,8 @@ export default function Dashboard() {
       return;
     }
 
-    const SpeechRecognition = (window as typeof globalThis & { SpeechRecognition?: any; webkitSpeechRecognition?: any }).SpeechRecognition || (window as typeof globalThis & { SpeechRecognition?: any; webkitSpeechRecognition?: any }).webkitSpeechRecognition;
+    // @ts-ignore - Speech Recognition API types
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
     const recognition = new SpeechRecognition();
     
     recognition.continuous = false;
@@ -121,7 +122,8 @@ export default function Dashboard() {
       setIsListening(true);
     };
 
-    recognition.onresult = (event: SpeechRecognitionEvent) => {
+    // @ts-ignore - SpeechRecognitionEvent type
+    recognition.onresult = (event) => {
       const transcript = event.results[0][0].transcript;
       setSearchQuery(transcript);
       setIsListening(false);
